@@ -52,45 +52,6 @@
 
 </div>
 
-<div class="content">
-  <p>We have decided to implement the live musician practice critique idea.
-  <br/>One issue we plan to address during our user testing is the scope of users we’re trying to target. For example, we found in previous WOz testing that a pair that was more equally matched in playing ability both wanted to use the video slider, whereas a pair with a significantly more experienced listener wanted complete control given to the more experienced listener. Although the implementation in our initial working prototype will not depend heavily on this, other factors in our app (i.e. how to initiate practice sessions, what critique buttons to include) will be informed by this decision.</p>
-
-  <h3>Key Feature Choices & Rationale</h3>
-  <h4>Practice Phase</h4>
-  <ul>
-  <li><strong>Start/stop practice button for performer(P):</strong> Ps were unclear on when they could start/stop their practice during WOz testing, so we added this to make defining the practicing portion easier for the performer. This way the listeners(L), who were confused about when the other person was going to play, would also be more comfortable with understanding what the other person is doing.</li>
-  <li><strong>Live video/audio stream from performer(P) to listener(L): </strong> We got feedback that some Ps were distracted by seeing the large webcam stream of Ls, so the video/audio will be primarily one-way for the practice phase, where L can see/hear P, but P only sees a small feed of L to just note that L is there and listening without being distracting.</li>
-  <li><strong>Text feedback logging for L: </strong> All Ls used text to add more detailed feedback during testing, so we will keep this feature.</li>
-  <li><strong>Button commenting for L (customized based on performer instrument, prototype will be based on vocal): </strong>Users only used a subset of the ones provided, and commented on the fact that certain critique words were more suited for one instrument than the other.
-  </ul>
-  <h4>Critique Phase</h4>
-  <ul>
-  <li><strong>Live video/audio stream from P to L and L to P</strong>: The critique was a more personal one-on-one task, which requires a two-way video/audio connection.</li>
-  <li><strong>Manipulatable recorded video of practice phase, with controls of video defaulting to listener</strong>: Testing revealed that typically the more experienced user (usually the Ls) would want to have control over the playback video so that they can point things out to the other (usually the Ps). However in the equally matched pair, the Ps also manipulated the playback video. Thus, we decided to give the control to the typically “better” Ls, with the option of switching controls if requested (via button on the side that indicates who has the video control). </li>
-  <li><strong>L’s text/button comments showing up synchronized/real-time with the playback video: </strong>Seeing the comments in real-time with the performance playback triggered the Ls to give more detailed feedback, and pairs were able to critique effectively on specific portions of the piece; we received positive feedback on this feature so we will keep it.</li>
-  <li><strong>Ending summary feedback form (not implemented yet): </strong>One pair wanted to be able to reflect on their practice session individually as well after the pair session, so we decided to add a feature that would let them record their individual thoughts at the end as part of the practice archive.</li>
-  </ul>
-  <h4>User Features</h4>
-  <ul>
-  <li><strong>Users can specify what instrument they play: </strong>We found that the most informative feedback sessions for both users was when the performers played the same instrument. We added this feature so performers can request someone who plays their instrument to give them feedback. </li>
-  <li><strong>Record/upload own practice clip (not implemented yet)</strong>: We wanted the users to be able to gauge the abilities of the performers they were going to exchange feedback with, since we found that the performer’s playing ability relative to the listeners’ ability greatly affected what kind of feedback was given. This would be helpful in the cases where the performer/listener do not know each other.</li>
-  <li><strong>Home Page with list of all online users they can invite with click</strong>: We wanted to make the invitation process as easy as possible, and this online buddy list on the home page was the easiest way to check who was online, much like skype/messenger.</li>
-  <li><strong>Home Page with list of past practice sessions the user has practiced/critiqued in: (not implemented) </strong>Having a log will allow the users to go back on previous practice sessions and review/grow more; although not strictly communication-related, we realized through WOz that many musicians valued hearing a recording of themselves play to objectively listen and improve on.</li>
-
-  <h4>Etc</h4>
-  <ul>
-  <li><strong>Invitation system</strong>: We did not test this part, but talking to the users revealed that they would want to set up a time beforehand with someone they knew to practice. We have implemented this with a straightforward method in which one user can request a practice session with another online user through their homepage, and the other person, who sees a dynamic pop-up after being invited, can either accept/deny this invitation. When both accept, they are taken to the practice phase page. The musicians we talked to seemed more enthusiastic about asking for people to listen to their practice (as opposed to the listener wanting to provide feedback), so our prototype only gave musicians the ability to invite other online users to be listeners. Eventually, we’re hoping to have a robust messaging system with a calendar so users can schedule practices on the platform itself.</li>
-  </ul>
-
-  <h3>Implementation Progress</h3>
-
-  <h4>From all the features we have planned on implementing, here is what we’ve accomplished so far.  Each feature is listed with a priority number from 1-3 (1 represents most important and 3 means nice to have :</h4>
-
-  <ul>
-  <li>
-  <strong>Homepage</strong>
-
 <div class='soft-white-mid-box'>
 <p>We have decided to implement the live musician practice critique idea.
 <br/>One issue we plan to address during our user testing is the scope of users we’re trying to target. For example, we found in previous WOz testing that a pair that was more equally matched in playing ability both wanted to use the video slider, whereas a pair with a significantly more experienced listener wanted complete control given to the more experienced listener. Although the implementation in our initial working prototype will not depend heavily on this, other factors in our app (i.e. how to initiate practice sessions, what critique buttons to include) will be informed by this decision.</p>
@@ -116,7 +77,7 @@
 <li><strong>Record/upload own practice clip (not implemented yet)</strong>: We wanted the users to be able to gauge the abilities of the performers they were going to exchange feedback with, since we found that the performer’s playing ability relative to the listeners’ ability greatly affected what kind of feedback was given. This would be helpful in the cases where the performer/listener do not know each other.</li>
 <li><strong>Home Page with list of all online users they can invite with click</strong>: We wanted to make the invitation process as easy as possible, and this online buddy list on the home page was the easiest way to check who was online, much like skype/messenger.</li>
 <li><strong>Home Page with list of past practice sessions the user has practiced/critiqued in: (not implemented) </strong>Having a log will allow the users to go back on previous practice sessions and review/grow more; although not strictly communication-related, we realized through WOz that many musicians valued hearing a recording of themselves play to objectively listen and improve on.</li>
-
+</ul>
 <h4>Etc</h4>
 <ul>
 <li><strong>Invitation system</strong>: We did not test this part, but talking to the users revealed that they would want to set up a time beforehand with someone they knew to practice. We have implemented this with a straightforward method in which one user can request a practice session with another online user through their homepage, and the other person, who sees a dynamic pop-up after being invited, can either accept/deny this invitation. When both accept, they are taken to the practice phase page. The musicians we talked to seemed more enthusiastic about asking for people to listen to their practice (as opposed to the listener wanting to provide feedback), so our prototype only gave musicians the ability to invite other online users to be listeners. Eventually, we’re hoping to have a robust messaging system with a calendar so users can schedule practices on the platform itself.</li>
@@ -185,7 +146,7 @@
 <h3>Remaining Implementation/Design issues</h3>
 <ul>
 <li>We still have to test which invitation system works the best, and if it would be confusing for listeners to be able to request practice sessions with performers. Based on our results from testing, we may add a button that allows listeners to request a session with performers on the home page as well.</li>
-<li>  We need to implement working profiles so that users can document their progress.  They will be able to go back and rewatch their recorded rehearsals as well as see past critiques they have made.  We also want users to be able to directly message one another through their profiles</li>
+<li>We need to implement working profiles so that users can document their progress.  They will be able to go back and rewatch their recorded rehearsals as well as see past critiques they have made.  We also want users to be able to directly message one another through their profiles</li>
 <li>We still need to implement the messaging system so scheduling can occur on the platform itself. Although this was lower priority than the key features we implemented for this milestone, a complete app would have this so the app can stand alone</li>
 <li>We need a better way to identify if users are online. Right now, users are not “not online” when just exit the page, so we need to determine the best way to store this information in firebase.</li>
 <li>We may have to narrow our user target. For example, if we focus only on student/teacher type relationships, we may take out the option to swap video controls in the critique phase. If we focus on equally matched pairs, we may add an additional “jam session” mode where they can just chat about their respective instruments and play with each other with no critique. More testing will help inform this, and we hope to solidify our focus by the next prototype iteration.</li>
