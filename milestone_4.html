@@ -127,74 +127,69 @@
 <h4>From all the features we have planned on implementing, here is what we’ve accomplished so far.  Each feature is listed with a priority number from 1-3 (1 represents most important and 3 means nice to have :</h4>
 
 <ul>
-<li>
-<strong>Homepage</strong>
-<ol>
-<li>We’ve implemented a static navbar which helps users navigate easily throughout the app. (priority: 1)</li>
+  <li>
+    <strong>Homepage</strong>
+    <ol>
+      <li>We’ve implemented a static navbar which helps users navigate easily throughout the app. (priority: 1)</li>
       <li>Users can either login if returning or create a new account using their email. (priority: 1)</li>
       <li>Upon login users are redirected to the homepage (priority: 1)</li>
-<li>On the homepage users can see who else is online at the moment (priority: 1)</li>
-<li>This list of online users continuously updates  (priority: 2)</li>
-<li>Users can directly invite someone else to either perform or watch and critique their performance. (priority: 2)</li>
-</ol>
-</li>
-<li>
-<strong>Practice session</strong>
-<ol>
-      <li>A practice session is initiated by clicking either the “Invite X to watch my rehearsal” or “Request to watch X’s rehearsal” (priority: 1)</li>
-      <li>If I invite X to a practice session, they will get a pop-up notifying them of my invitation.  They have the option to either accept or decline my invitation.  (priority: 1)</li>
-      <ul>
-<li>If X accepts my invite we both enter the practice session</li>
-<li>If X declines X returns to their homepage, and I am given the option of returning home or to my profile</li>
-</ul>
-<li>Once both P and C have entered practice session, they are prompted to allow use of their webcams. (priority: 1)</li>
-<li>If both users allow camera use, they begin a two-way live video chat.  We used WebRTC to accomplish one and two-way audio/video chat. (priority: 1)</li>
-<li>The musician has a button with the option to “Start Rehearsal”.  This button will toggle between start and stop modes. (priority: 1)</li>
-<li>Rehearsal session officially begins when P is ready and clicks button:</li>
-<li>
-
-  <ol>
-      <li>The app begins to record the P’s performance. (priority: 1)</li>
-<li>Audio will be flipped to one-way, so whatever noise C makes doesn’t appear in recording or distract P (priority: 2)</li>
-<li>When P pushes button, the divs with commenting interface appear on C’s end. (priority: 1)</li>
+      <li>On the homepage users can see who else is online at the moment (priority: 1)</li>
+      <li>This list of online users continuously updates  (priority: 2)</li>
+      <li>Users can directly invite someone else to either perform or watch and critique their performance. (priority: 2)</li>
     </ol>
   </li>
-<li>C’s commenting interface contains both the option to type in commentary and tag (priority: 2)</li>
-<li>
+  <li>
+  <strong>Practice session</strong>
   <ol>
-<li>There are 4 categories of  tag with which C can rate parts of P’s performance: Pitch, Rhythm, Posture, and Tone.  Each of these categories have a “Good” tag option or “Bad” tag option.  This gives C essentially 8 tagging options (for example “good pitch” or “bad tone”). (priority: 2)</li>
-<li> C’s comments will be saved with a timestamp so they can be synchronized and displayed with the performance playback later. (priority: 1)</li>
-    </ol>
-  </li>
-<li>Practice session ends when P hits the “Stop rehearsal” button.  Both users are redirected to critique session.  (priority: 1)</li>
-</ol>
-  </li>
-
-  <li><strong>Critique session</strong>
-    <ol>
-
-  <li>There are 4 categories of  tag with which C can rate parts of P’s performance: Pitch, Rhythm, Posture, and Tone.  Each of these categories have a “Good” tag option or “Bad” tag option.  This gives C essentially 8 tagging options (for example “good pitch” or “bad tone”). (priority: 2)</li>
-  <li> C’s comments will be saved with a timestamp so they can be synchronized and displayed with the performance playback later. (priority: 1)</li>
-      </ol>
-    </li>
-  <li>Practice session ends when P hits the “Stop rehearsal” button.  Both users are redirected to critique session.  (priority: 1)</li>
+        <li>A practice session is initiated by clicking either the “Invite X to watch my rehearsal” or “Request to watch X’s rehearsal” (priority: 1)</li>
+        <li>If I invite X to a practice session, they will get a pop-up notifying them of my invitation.  They have the option to either accept or decline my invitation.  (priority: 1)</li>
+        <ul>
+          <li>If X accepts my invite we both enter the practice session</li>
+          <li>If X declines X returns to their homepage, and I am given the option of returning home or to my profile</li>
+        </ul>
+        <li>Once both P and C have entered practice session, they are prompted to allow use of their webcams. (priority: 1)</li>
+        <li>If both users allow camera use, they begin a two-way live video chat.  We used WebRTC to accomplish one and two-way audio/video chat. (priority: 1)</li>
+        <li>The musician has a button with the option to “Start Rehearsal”.  This button will toggle between start and stop modes. (priority: 1)</li>
+        <li>Rehearsal session officially begins when P is ready and clicks button:
+          <ol>
+            <li>The app begins to record the P’s performance. (priority: 1)</li>
+            <li>Audio will be flipped to one-way, so whatever noise C makes doesn’t appear in recording or distract P (priority: 2)</li>
+            <li>When P pushes button, the divs with commenting interface appear on C’s end. (priority: 1)</li>
+          </ol>
+        </li>
+        <li>C’s commenting interface contains both the option to type in commentary and tag (priority: 2)
+          <ol>
+            <li>There are 4 categories of  tag with which C can rate parts of P’s performance: Pitch, Rhythm, Posture, and Tone.  Each of these categories have a “Good” tag option or “Bad” tag option.  This gives C essentially 8 tagging options (for example “good pitch” or “bad tone”). (priority: 2)</li>
+            <li> C’s comments will be saved with a timestamp so they can be synchronized and displayed with the performance playback later. (priority: 1)</li>
+          </ol>
+        </li>
+        <li>Practice session ends when P hits the “Stop rehearsal” button.  Both users are redirected to critique session.  (priority: 1)</li>
   </ol>
-    </li>
-
+  </li>
     <li><strong>Critique session</strong>
       <ol>
-        <li>Two-way video chat is turned back on (priority: 1)</li>
-  <li>Both users can now also see a video recording of P’s rehearsal (priority: 1)</li>
-        <li>C has sole control of recorded playback (priority: 2)</li>
-        <li>C’s comments appears alongside playback (priority: 1)</li>
-        <li>Both P and C can X out of review session when done and return home (priority: 1)</li>
-      </ol>
-    </li>
-  </ul>
+    <li>There are 4 categories of  tag with which C can rate parts of P’s performance: Pitch, Rhythm, Posture, and Tone.  Each of these categories have a “Good” tag option or “Bad” tag option.  This gives C essentially 8 tagging options (for example “good pitch” or “bad tone”). (priority: 2)</li>
+    <li> C’s comments will be saved with a timestamp so they can be synchronized and displayed with the performance playback later. (priority: 1)</li>
+        </ol>
+      </li>
+    <li>Practice session ends when P hits the “Stop rehearsal” button.  Both users are redirected to critique session.(priority: 1)</li>
+    </ol>
+      </li>
 
-<h3>Remaining Implementation/Design issues<h3>
+      <li><strong>Critique session</strong>
+        <ol>
+          <li>Two-way video chat is turned back on (priority: 1)</li>
+    <li>Both users can now also see a video recording of P’s rehearsal (priority: 1)</li>
+          <li>C has sole control of recorded playback (priority: 2)</li>
+          <li>C’s comments appears alongside playback (priority: 1)</li>
+          <li>Both P and C can X out of review session when done and return home (priority: 1)</li>
+        </ol>
+      </li>
+</ul>
+
+<h3>Remaining Implementation/Design issues</h3>
 <ul>
-<li>We still have to test which invitation system works the best, and if it would be confusing for listeners to be able to request practice sessions with performers. Based on our results from testing, we may add a button that allows listeners to request a session with performers on the home page as well.<li>
+<li>We still have to test which invitation system works the best, and if it would be confusing for listeners to be able to request practice sessions with performers. Based on our results from testing, we may add a button that allows listeners to request a session with performers on the home page as well.</li>
 <li>  We need to implement working profiles so that users can document their progress.  They will be able to go back and rewatch their recorded rehearsals as well as see past critiques they have made.  We also want users to be able to directly message one another through their profiles</li>
 <li>We still need to implement the messaging system so scheduling can occur on the platform itself. Although this was lower priority than the key features we implemented for this milestone, a complete app would have this so the app can stand alone</li>
 <li>We need a better way to identify if users are online. Right now, users are not “not online” when just exit the page, so we need to determine the best way to store this information in firebase.</li>
@@ -204,10 +199,10 @@
 <li>During WoZ testing those critiquing expressed a desire to summarize their comments at the end.  They wished they had some way to either write down final thoughts or record a video message at the very end of the rehearsal session. </li>
 </ul>
 
-<!-- <h5>To see a full list of views we need to implement, tagged by their priorities, as well as the database model, <a href=”https://docs.google.com/document/d/1AqkqUNvj1yGwA2husGVAwWuuAINigk-xpi3Gh0wTJko/edit?usp=sharing”>click here</a>.</h5>
+<h5>To see a full list of views we need to implement, tagged by their priorities, as well as the database model, <a href=”https://docs.google.com/document/d/1AqkqUNvj1yGwA2husGVAwWuuAINigk-xpi3Gh0wTJko/edit”>click here</a>.</h5>
 
-<h5>To see our task flow and wireframes, <a href=”https://drive.google.com/folderview?id=0B6rmFJxaTtbnWWJINzF1bG1fQ2c&usp=sharing”>click here</a>.</h5> -->
 
+<h5>To see our task flow and wireframes, <a href=”https://drive.google.com/folderview?id=0B6rmFJxaTtbnWWJINzF1bG1fQ2c&usp=sharing”>click here</a>.</h5>
 
 </div>
 </body>
