@@ -1,0 +1,117 @@
+.header-green-line{
+	width:88%;
+	height:40px;
+	background-color: #A2D39C;
+	position: absolute;
+	position:absolute;
+	opacity:.8;
+	left:80px;
+	top:20px;
+
+}
+.container{
+	left:100px !important;
+}
+.group-name{
+	position:absolute;
+	font-size:90px;
+	z-index:10;
+	left:90px;
+}
+.header-red-line{
+	width:65%;
+	height:40px;
+	background-color: #F7977A;
+	opacity:.6;
+	position:absolute;
+	left:80px;
+	top:50px;
+}
+
+.header-blue-line{
+	width:40%;
+	height:40px;
+	opacity:.6;
+	background-color: #7EA7DE;
+	position:absolute;
+	left:80px;
+	top:80px;
+}
+
+#header{
+	width:100%;
+	height:150px;
+	position:relative;
+}
+
+a{
+	text-decoration: none;
+}
+
+.my-nav-button{
+	width:60px;
+	height:30px;
+	z-index:100;
+	opacity:1;
+	float:left;
+	text-decoration: none;
+	text-align:center;
+}
+
+.active {
+	background-color:black;
+	border-radius:25px;
+	color:white;
+}
+
+.my-nav-button:hover{
+	opacity:.2px;
+	background-color:gray;
+	border-radius:25px;
+	color:white;
+}
+
+.buttons{
+	left:80px;
+	top:120px;
+	position:absolute;
+	background-color:white;
+	opacity:.8;
+	font-size:18px;
+	height:40px;
+}
+
+.normal-page{
+	background: url('../imgs/home/background.jpg') repeat fixed;
+}
+
+.main-page{
+	background: url('../imgs/home/group.jpg') no-repeat center center fixed !important; 
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.soft-white-index-div{
+	background-color:white;
+	opacity:.8;
+	right:100px;
+	top:100px;
+	position:absolute;
+	float:right;
+	width:500px;
+	color:black;
+	font-size:14px;
+	padding:10px;
+}
+
+.soft-white-mid-box{
+	margin-top:30px;
+	background-color:white;
+	padding:10px;
+	left:80px;
+	right:150px;
+	opacity:.93;
+	position:absolute;
+}
