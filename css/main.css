@@ -106,6 +106,20 @@ a{
 	padding:10px;
 }
 
+
+.soft-white-app-div{
+	background-color:white;
+	opacity:.8;
+	right:100px;
+	top:200px;
+	position:absolute;
+	float:right;
+	width:200px;
+	color:black;
+	font-size:14px;
+	padding:10px;
+}
+
 .soft-white-mid-box{
 	margin-top:30px;
 	background-color:white;
