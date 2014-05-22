@@ -49,6 +49,33 @@
       <div class='my-nav-button'>M8</div>
     </a>
   </div>
+</div>
+
+<div class='soft-white-mid-box'>
+<h3>Main Changes</h3> 
+<p>On top of the user testing round last week, we did 2 more sessions of very informal users testing as well, asking some users we tested for WOz to come try the app out again. Here are the changes we made:</p>
+<ul>
+<li><strong>Eliminate the critique buttons</strong>: As we realized that binary buttons were not beneficial and not utilized fully by the users, we eliminated the default good/bad buttons and decided to implement a new critique system that would give the users more flexibility that would be more applicable to their instrument (more details below).</li>
+<li><strong>Add positive/negative sentiment to text critiques</strong>: Through testing, users didn’t really utilize the buttons, but they initially liked the quick red/green coding for negative/positive critiques as it gave them a quick reminder and visualization of how the practice session was going. We wanted to keep this visualization, but maintain the flexibility of being able to add text critiques. Now, rather than having the critique buttons and a text critique for comments on the side, we have three input boxes where users can either type a compliment, suggestion, or a simple comment. These critiques will be color coded accordingly.</li>
+<li><strong>Re-organize the layout of video/critique elements</strong>: Because we were so focused on functionality last time, we didn’t really get a chance to explore the usability of critiquing; testing revealed that having the video physically far away from the critique system was tedious as users had to switch back and forth between focusing on the comment and focusing on the video. We re-mocked up the interface <a href=”https://drive.google.com/file/d/0B6rmFJxaTtbnMWwtUVgxN3dJOU0/edit?usp=sharing” target="_blank">here</a>. Basically, we made the other person’s stream a lot larger, and moved the critique system directly beneath it so users did not have to switch back and forth and get distracted.</li>
+<li><strong>Give playback video control to critiquers as well</strong>: Currently, only the musician has the ability to control the playback video. We found from testing that usually the critiquer wants control of the video since they know where to point out certain things. We decided to give default control to the critiquer, with the option of toggling control back and forth between the critiquer/musician if the musician wishes to control the video at any point.</li>
+<li><strong>Make allow microphone/video permissions noticeable</strong>: We noticed from testing that this seemingly small detail made users frustrated, as they could not figure out why the videos were not loading. The easy fix we implemented was to simply add a div when the page loads that instructs users to click the ‘allow’ button, and will go away once users have done so.</li>
+<li><strong>Mute critiquer’s audio while musician is practicing</strong>: Testing revealed that musicians were distracted by the keyboard sound/other noises on the critiquer’s end while they were practicing, so we simply muted their sound.</li>
+<li><strong>Gray out critiquer’s video while musician is practicing</strong>: Going off the finding above, we wanted to remove anything potentially distracting to the musician, so we decided to gray out the critiquer’s video while the musician was practicing on top of muting their audio. This would allow musicians to actually focus on playing.</li>
+</ul>
+
+<h3>New Features</h3>
+<p>Some are closely linked to the main changes described above, but we had 
+<ul>
+<li><strong>Timeline view of comments:</strong> Testing revealed that the initial critique view was too much like a chat interface and less of a visualization of comments in real time; critiquers would type things in the chat box assuming that the musician could see them, when they actually did not see any of the comments until the very end. To address this insight, as well as improve on the visualization of the comments by adding in scale (i.e. where in the whole timeline the critiques actually were), we completely revamped the visualization of our critique from the sidebar to a timeline (see the interface mockup above). This had the effect of eliminating the confusing chat-like interface, and helped users visualize the general flow of practice with comments (color coded with +/-/neutral sentiment) being displayed accordingly. 
+<li><strong>Clickable comments that jump to its appropriate time in the playback video: </strong>We noted that some users tried to click on the individual critique boxes, assuming that they would jump to the specific portion in the video. Since we had the real-time comments being displayed, users most likely made a connection between the two and assumed that the critique display was linked directly with the video. We went ahead and implemented the new feature of having the playback video jump to a specific portion based on the critique box the users clicked. </li>
+<li><strong>Add better indicator of session status (i.e. musician started practicing)</strong>: We added better indicators of the session status by displaying additional text of the other person’s status if it was unclear at any point. For example, we found through testing that critiquers didn’t really know when to start commenting, even when they had the commenting interface grayed out. We thus added text indicating to critiquers that they were waiting for the musician to start practicing.</li>
+
+</ul>
+
+<h3>Implementation Progress</h3>
+<p>We’ve created a timeline of our implementation progress that you can look at <a href=”https://docs.google.com/a/stanford.edu/spreadsheet/ccc?key=0Aixn7d3Dm8WedHVSc25GYUF4eE9hS2cwZ2wyeHRzYkE&usp=sharing” target="_blank">here</a>.
+</p>
 
 </div>
 
